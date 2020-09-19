@@ -1,0 +1,147 @@
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="index" id="navbar">
+        <header class="indexheader">
+            <h1>Literature Review</h1>
+        </header>
+        <div class="indexelementsbox">
+
+                <a href="#Introduction_to_Multiscale_Analysis" class="nav-link">Introduction to Multiscale Analysis</a>
+                <a href="#Scales_of_Matter" class="nav-link">Scales of Matter</a>
+                <a href="#Carbon_Steels" class="nav-link">Carbon Steels</a>
+                <a href="#Heat_Transfer_Mechanisms" class="nav-link">Heat Transfer Mechanisms</a>
+                <a href="#Mechanical_Behaviour_of_Materials" class="nav-link">Mechanical Behaviour of Materials</a>
+                <a href="#Manufacturing_Process_by_Casting" class="nav-link">Manufacturing Process by Casting</a>
+                <a href="#Stress_and_Strains_involved_in_the_Manufacturing_Process_by_Casting" class="nav-link">Stress and Strains involved in the Manufacturing Process by Casting</a>
+                <a href="#Finite_Element_Method" class="nav-link">Finite Element Method</a>
+                <a href="#Computational_Resources" class="nav-link">Computational Resources</a>
+        </div>
+    </nav>
+    <main id="main-doc" class="info">
+        <section class="main-section" id="Introduction_to_Multiscale_Analysis">  
+            <header class="headermain">Introduction to Multiscale Analysis</header>
+            <p>The world around us may seem very different depending on the scale at which it is observed. Matter behaves in different ways, different factors affect it and, therefore, different methods are used for its study. In general, the characteristics of the matter at smaller scales determine the behavior and the properties at larger scales; although it also happens that certain properties on a larger scale (such as geometry), affect the characteristics on a smaller scale. This fact has transcendental consequences in the engineering industry, where it is of vital importance to predict the characteristics of the materials that will be subjected to certain conditions, in order to determine if they will be able to support the loads involved, as well as to optimize the expenses.</p>
+            <p>The most fundamental physical laws describe the behavior of matter in subatomic scales, where the theories of quantum mechanics prevail. It is tempting to try to model the matter in its different scales starting from these levels, since they are the starting point for the others. However, as the number of interactions between particles increases, the level of complexity also increases, resulting in properties and behaviors that are extremely difficult to predict theoretically. It is then necessary to approach these new scales with other methods of analysis (Fish 2014).</p>
+            <p>Each scale is characterized by having a structure, as shown in Figure 2.1. Each one has its own fields of research and ways of studying them. In this sense, the following structures can be named (Barón 2016):</p>
+            <p><ul><li>Electronic structure (subatomic scale).</li><li>Atomic structure (atomic scale).</li><li>Microstructure (microscopic scale, i.e. is observable through a microscope).</li><li>Macrostructure (macroscopic scale, i.e. is observable by the naked eye).</li></ul></p>
+            <p>The purpose of the multiscale analysis is to establish relationships between different structures, in order to predict the behavior of one from the characteristics of another. Thus, it is possible to obtain the global properties of a material (on a macroscopic scale), as well as obtain the varying local field distributions (J. Aboudi 2013).</p>
+            <p>In this section, it will be given a description of the most important scales in the context of the developed project, including its most relevant characteristics. The smallest scale that will be treated throughout this project is the atomic scale since, although it is not directly dealt with such scale here, it is important to understand its basic principles in order to understand the behavior of a material on the microscopic scale. Therefore, it will only be addressed in the literature review. The numerical analysis will concentrate on the microscopic and macroscopic scales.</p>
+        </section>
+        <section class="main-section" id="Scales_of_Matter">   
+            <header class="headermain">Scales of Matter</header>
+            <p>The forces that act on the atoms, causing them to attract each other and thus give shape to different materials, are presented in the form of the bonds schematized in Figure 2.2 (Barón 2016):</p>
+            <p>The primary (or strong) bonds are a product of the transfer or sharing of valence electrons between different adjacent atoms, while the secondary (or weak) bonds are a product of the coulombic attraction between the electric dipoles of the atoms or molecules. These bonds cause the atoms to gather in space with a certain arrangement. If this arrangement can be reduced to a base cell (called a unit cell) that repeats infinitely in space (2D or 3D), without changes in its pattern, it is considered to be in the presence of a crystal (as opposed to when this does not happen, in which case the structure is such to be amorphous) (Barón 2016).</p>
+            <p>The white spaces that exist between different atoms are called interstitial spaces. It is in these spaces that the atoms of other elements are lodged, forming alloys (Barón 2016).</p>
+            <p>In three dimensions the principles that are used to define a crystal are the same. Although, the amount of base structures that can be formed is much greater.</p>
+            <p>In particular, in this project, there is interest in the body-centered cubic (BCC), face-centered cubic (FCC) and hexagonal close packed (HCP) structures, since they are the ones that form the most metals with applications in engineering. The mechanical properties of the materials will depend directly on their crystalline structure at the atomic level.</p>
+            <p>On the other hand, crystals are never perfect. The defects that these can contain are classified as:</p>
+            <p><ul><li>Vacancies: Occurs when an atom "is missing" in a certain position of the crystalline network, leaving a "vacant" space.</li><li>Interstitial atoms: Occurs when there is an extra atom located in the interstitial spaces.</li><li>Substitutional Atoms: Occurs when an atom of another element takes the place of an atom of the element of the crystal lattice.</li><li>Dislocations: Occurs when there is a section of the crystal that is misaligned with respect to another contiguous section.</li><li>Grain boundaries: It occurs at the borders of crystalline arrangements, where different crystalline arrangements can be found; or the same crystalline arrangements, but with another orientation; or crystalline arrays of different chemical compositions. The areas where this occurs are called "grain boundaries" and define the edges of a "grain", a concept that will be important on the microscopic scale</li></ul></p>
+        </section>
+        <section class="main-section" id="Carbon_Steels">  
+            <header class="headermain">Carbon Steels</header>
+            <p>In carbon steels, in which iron and carbon form solid interstitial solutions, different phases can be found in the microstructure, depending on the composition (in this case, percentage of carbon in the alloy) and the crystalline structure.</p>
+            <p>The main phases of carbon steel are:</p>
+            <p><ul><li>Ferrite: With a BCC crystal structure, is the main phase of steel. It is a solid solution, with up to 0.035% wt of Carbon, therefore, it can be considered that iron is in its pure state, without alloying components. It has magnetic properties. It is very soft, ductile, resistant and easily deformable (Sommer 2018).</li><li>Austenite: With an FCC crystalline structure, is a solid solution with up to 2.1% wt of Carbon. It is soft, ductile, resistant and easily deformable (Sommer 2018).</li></ul></p>
+            <p>...</p>
+        </section>
+        <section class="main-section" id="Heat_Transfer_Mechanisms">  
+            <header class="headermain">Heat Transfer Mechanisms</header>
+            <p>Heat transfer is a form of energy propagation, which occurs due to a temperature differential, in which energy flows (according to the second law of thermodynamics) from spaces with higher temperatures (higher energy) to spaces with lower temperatures (lower energy), seeking balance (F. Incropera 2006). </p>
+            <p>In general, when talking about heat transfer, a magnitude <i>q</i> is considered, which denotes the amount of energy (heat), transferred in a time interval. Therefore, the heat transferred, <i>q</i> has the following units:</p>
+            <div  class="codestyle">
+                <code>q=energy/time=power</code>
+            </div>
+            <p>In order to analyze the heat flow in 3D models, it can always be considered the flow of heat through the surfaces that enclose a control volume (2D geometry). Therefore, the heat flux per unit area is used:</p>
+            <div  class="codestyle">
+                <code>q''=power/area</code>
+            </div>
+            <p>So, it is enough to multiply the heat flow times the corresponding area to obtain the total heat transferred per unit of time:</p>
+            <div  class="codestyle">
+                <code>q=q''*A</code>
+            </div>
+            <p>This heat flow can occur through three different mechanisms: conduction, convection and radiation.</p>
+            <h3>Conduction</h3>
+            <p>Heat transfer occurs by direct contact between the excited molecules with their neighbors, transferring part of their motion. It can occur in solids, liquids and gases. In solids, it can occur within the same object, when there is a temperature differential through its volume, or between two different objects, when they are in contact (F. Incropera 2006)</p>
+            <p>The physical law that governs this mechanism is known as Fourier's Law (F. Incropera 2006):</p>
+            <div  class="codestyle">
+                <code>q''=-k*(dT/dX)</code>
+            </div>
+            <h3>Convection</h3>
+            <p>Heat transfer occurs due to the combination between the existing conduction between a solid and a fluid (gas or liquid), and the transfer of heat and mass that involves the movement of the fluid (F. Incropera 2006).</p>
+            <p>The physical law that governs this mechanism is Newton's law of cooling (F. Incropera 2006):</p>
+            <div  class="codestyle">
+                <code>q''=-h*(Ys-Tinf)</code>
+            </div>
+            <h3>Radiation</h3>
+            <p>Heat transfer occurs due to alterations of the configurations at the atomic-molecular scale. Every material above the absolute zero of temperature emits heat by radiation. This heat is transmitted by the electromagnetic field, not needing material means for it to happen (F. Incropera 2006).</p>
+            <p>The physical law that governs this mechanism is the Steffan-Boltzmann law (F. Incropera 2006):</p>
+            <div  class="codestyle">
+                <code>q''=E*s*(Ts4-Tsur4)</code>
+            </div>
+        </section>
+        <section class="main-section" id="Mechanical_Behaviour_of_Materials">  
+            <header class="headermain">Mechanical Behaviour of Materials</header>
+            <p>The most commonly way used to evaluate the mechanical behavior of a material is by the stress - strain curves. In general, it is accepted that a material, when subjected to a stress σ, will undergo a strain ε. The stress-strain curve of a material shows how one magnitude relates to the other.</p>
+            <h3>Elastic Zone</h3>
+            <p>The main characteristic of the elastic zone (purple color in Figure 2.19) is that the strains are reversible. That is, when the loads applied disappear, the material returns to its original state without strains (Hibbeler 2006).</p>
+            <p>There are two sections in this zone:</p>
+            <p>The first goes from the origin to the point A, where the curve stress - strain presents a linear behavior, obeying the Hooke's law (Hibbeler 2006).</p>
+            <p>Then there is the "transition" section, which includes point A to point B and marks the change from linear to non-linear behavior, characteristic of the plastic zone. The point B is known as upper yield point and the stress corresponding is the yield stress (Hibbeler 2006).</p>
+            <h3>Plastic Zone</h3>
+            <p>After point B, there is the plastic zone, where the strains become permanent. After removing the loads, the material preserves the strains. In this zone, the relationship between stress and strain is no longer governed by Hooke's law. Point C is known as lower yield point (Hibbeler 2006).</p>
+            <p>When the yield stress is exceeded, the strains accelerate, causing the abrupt change of slope that can be seen at the end of the elastic zone. Point D is called ultimate stress and marks the maximum stress that the material can experience before starting to deform locally. Finally, the point E indicates the strain at which the material finally fractures (Hibbeler 2006).</p>
+        </section>
+        <section class="main-section" id="Manufacturing_Process_by_Casting">  
+            <header class="headermain">Manufacturing Process by Casting</header>
+            <p>Casting is a manufacturing process by which a given material is shaped by melting it, then pouring it into a mold (which can be made of different types of materials) that is a negative of the desired part. When cooled, it solidifies and acquires permanently the shape it adopted while the liquid filled the cavity of the mold.</p>
+            <p>This process is made up of different stages that go from the design of the appropriate mold and gating system, to the removal of the workpiece from the mold and its subsequent cooling to room temperature. In this work only two stages of it are analyzed:</p>
+            <p><ol><li>Cooling of the part inside the mold: The material is already inside the mold and has been adjusted to its shape. It continues at a very high temperature, but it has already reached the point where it can be considered a solid (solidus temperature).</li><li>Cooling of the part out of the mold: After having passed a time interval, the part is removed from the mold, before having reached room temperature. In this stage, the part is cooled to such temperature outside the mold.</li></ol></p>
+        </section>
+        <section class="main-section" id="Stress_and_Strains_involved_in_the_Manufacturing_Process_by_Casting">  
+            <header class="headermain">Stress and Strains involved in the Manufacturing Process by Casting</header>
+            <p>During the casting process, the material poured into the mold gradually decreases its temperature until it reaches room temperature. This process is carried out according to the different heat transfer mechanisms mentioned in the previous section. This cooling involves a series of stress and strains that are the result of different mechanisms. In this section, a summary of each of these mechanisms is given.</p>
+            <h3>Thermal expansion</h3>
+            <p>Any variation of temperature in a body generates a change in its volume. Almost always (and for the cases that will be treated in this work), this relationship is directly proportional, that is, when increasing the temperature there will be an increase in volume (expansion) and when the temperature decreases there will be a decrease in volume (contraction). This is a result of the average increase (or decrease) in the distance between the atoms or molecules of a material. Being more excited (higher temperature), the atoms and molecules vibrate with more intensity, so this distance increases. </p>
+            <h3>Stress due to mechanical interaction</h3>
+            <p>Considering the beam presented in Figure 2.20 (a), which is supported on a flat joint and has a length L (for simplicity it is only considered the expansion/contraction in one dimension). If the temperature is raised in the whole part by a differential DT, according to the Equation 2.9, it will expand, increasing its length a differential DL. Likewise, if the temperature is lower in a differential -DT, it will contract, decreasing its length a differential -DL. That is, in both cases, there will be a change in length. However, there will be no strains, because the object has the dimensions it must have at each temperature. Therefore, there will be no stress either (Föll 2018).</p>
+            <h3>Stress due to thermal gradient</h3>
+            <p>Again, considering a 2D object of a given material (Figure 2.22 (a)) at a certain temperature. If an internal section is taken (Figure 2.22 (b)), and a temperature increase is applied, according to Equation 2.9, this section experiences an expansion in its dimensions.</p>
+            <p>In order to be able to fit the section at high temperature in the same space, it is necessary to apply compression stress, deforming it so that it recovers its original dimensions.</p>
+            <h3>Stress due to a local change of phases</h3>
+            <p>In addition to the volume change due to thermal expansion, at the microscopic scale volume changes will also occur due to the transformation of phases that the material undergoes as its temperature varies, since different phases will have different crystalline structures, being the atomic packing factor different in each phase (Föll 2018).</p>
+            <p>In the same way, in regions where there are temperature differentials, there may be sections where phase changes occur, thus involving a change in volume that will cause stress when interacting with the surroundings that have not changed phase.</p>
+            <p>In addition to this, there will be regions where cooling occurs faster than in others, producing different microstructures in different sections of the part, generating stresses.</p>
+            <h3>Residual Stress</h3>
+            <p>The residual stress is that stress that remains in an object after the external loads have been removed. A simple example can be seen in Figure 2.25. In Figure 2.25 (a), there is a bar with two nuts in its ends, crossing another bar in the form of a square. When tightening the nuts, the central bar undergoes tensile stress and the square undergoes compression stress. In Figure 2.25 (b), an analogous system is shown, where the bar, shorter than the sides of the square, is welded, thus generating the same type of stresses (Rodero 2014).</p>
+            <p>In the previous sections, three types of stresses which can be produced during the process of manufacturing an object by casting have been described. If only the elastic behavior of a material is considered, in which the strains disappear when external loads are removed, the following can be considered for each of those cases:</p>
+            <p><ul><li>Stress due to mechanical interaction: It disappears when the part is removed from the mold.</li><li>Stress due to thermal gradient: It disappears when the whole part is at room temperature.</li><li>Stress due to local change of phases: It disappears when all the sections of the part have reached the same temperature (this is only true if we consider a slow enough cooling in all sections of the part), since they will have experienced the same changes of phases.</li></ul></p>
+            <p>However, when considering the plastic behavior of the material, there will be areas where the plastic limit (yield stress) is reached, generating permanent strains. Because there are areas where the thermal gradient will be greater in certain stages of the process than in others and since there will be sections in contact with the mold and others with freedom of displacement, these strains will be uneven throughout the whole part, generating then residual stresses (C. Balasing 1977).</p>
+            <p>Residual stresses can lead to more fragile materials, unwanted strains and even fractures. However, they are not always necessarily harmful. For example, when applying residual compression stresses on the surface of an object, its useful life can be extended when it is subjected to fatigue. Whether the residual stresses are harmful or not will depend on the function it is wanted the part to fulfill, on the conditions to which the final part is going to be exposed, on what type of stresses it may have (compression or traction) and where these are located (C. Balasing 1977).</p>
+        </section>
+        <section class="main-section" id="Finite_Element_Method">  
+            <header class="headermain">Finite Element Method</header>
+            <p>The finite element method (FEM) is a numerical method that is used for the approximate resolution of problems related to the fields of engineering and physics. It is especially useful in the case of problems whose geometric characteristics, applied loads or properties make it impossible to obtain analytical solutions (Hutton 2004).</p>
+            <p>It is characterized by the division of a certain geometric domain into smaller parts, that is, finite elements. The structure formed by all the elements, representing the geometry under study, is called mesh. The points where the vertices between contiguous elements converge are known as nodes. Algebraic relations among the nodal values are obtained by solving the equation that rules de problem, often in a weighted-integral sense, over each element. This method offers two great advantages (Reddy 1993):</p>
+            <p><ul>complex geometries can be represented;</ul><ul>local results are obtained (for each element).</ul></p>
+            <p>The finite element method is based on the resolution of differential equations, using an approximation through a linear algebraic equation, which is obtained by reducing the study region in smaller finite subregions (finite elements), thus replacing the derivative (Song 2011).</p>
+            <p>The elements that make up the mesh can be of different types. For example, for geometries in two dimensions, they can be rectangular or triangular; while for problems in three dimensions they can be tetrahedral or hexahedral. The same mesh can contain different types of elements. In Figure 2.26, the discretization of a 2D geometry is shown, for rectangular elements, triangular elements and for the combination of rectangular and quadrilateral elements (Serafim 1998).</p>
+            <p>The finite element method is used mainly by the implementation of specialized software packages, which include CAD drawing tools that allow generating the desired geometries. It can be used in different types of problems, such as structural, heat conduction, fluid flow, among others. For all these types of analysis, there are three common steps when developing a model (Hutton 2004):</p>
+            <h3>Preprocessing</h3>
+            <p>This step consists, basically, in defining all the relevant characteristics of the model, such as: the geometry to be analyzed, the mesh in which it will be divided (including the type of element that makes it up), the properties of the material, the physical constraints (boundary conditions) and the applied loads (mechanical, thermal, dynamic, among others) (Hutton 2004).</p>
+            <h3>Solution</h3>
+            <p>In this stage, the software is used for assembling all input data and, based on the physical equations and physical laws relevant to the problem, calculates the field values in each node, as well as the corresponding interpolations (Hutton 2004). The time taken for this process will depend on the complexity of the problem, the number of elements that make up the mesh and the available computational resources.</p>
+            <h3>Postprocessing</h3>
+            <p>Finally, specialized software solutions in the application of the finite element method bring a tool package that allows visualizing and evaluating the numerical results. Some of the applications that these tools allow are: plotting graphs for certain variables as a function of time, visualization of field values in the geometry by means of a chromatic scale, plotting the deformed geometry of the structure, calculating safety factors, animating the behavior of the structure as a function of time, among others (Hutton 2004).</p>
+        </section>
+        <section class="main-section" id="Computational_Resources">  
+            <header class="headermain">Computational Resources</header>
+            <p>In this section, a brief description of the main computer codes used during the development of this project is presented, as well as their main use in the context of this thesis. All the simulations with the finite element codes were performed on a computer with an Intel i7 8700k CPU, with 16GB of RAM and GeForce GTX 1080 GPU.</p>
+            <p><ul><li>Abaqus (Abaqus 2019): Finite element code developed by the company SIMULIA. It allows addressing a wide range of problems, including static and dynamic, linear and non-linear, with formulations for structural, thermal, acoustic and fluid flow problems, among others (Abaqus 2019). The Abaqus / CAE Student Edition 2018 version will be used to perform some of the simulations in the microscopic scale analysis and to perform all the simulations in the macroscopic scale analysis. The student version of this software imposes a limitation of 1000 nodes for the meshes of the created models.</li><li>OOF2 (OOF2 2018): Finite element code, developed by the National Institute of Standards and Technology (NIST) and distributed with open source free of charge, specialized in the analysis of microstructures, based on a representation in two dimensions (an image) of it (C.E. Reid 2009). It will be used in this work to create the necessary meshes and perform some of the simulations in the microscopic scale analysis.</li><li>MatLab (MatLab 2018): Code of numerical calculation of matrices and vectors, which includes symbolic and complex calculation, with its own programming environment and language, developed by MathWorks and Cleve Moler (Fernández 2009). It will be used during this work for the tools it offers when plotting and taking information from the graphics.</li><li>JMatPro (JMatPro 2019): Simulation code developed by Sente Software that allows obtaining mechanical, thermo-physical and chemical properties for alloys, based on their chemical composition (JMatPro 2019). The properties of the material used in the analysis at macroscopic scale are based on results obtained in this code within the framework of the msCore project developed at the Faculty of Engineering of the University of Porto.</li><li>SolidWorks (SolidWorks 2018): CAD and CAE code developed by the company SIMULIA. It will be used in this work to generate the 3D models of the assembly elements in the analysis at a macroscopic scale, to then be exported to Abaqus. </li></ul></p>
+        </section>
+    </main>
+</body>
+</html>
